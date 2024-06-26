@@ -6,9 +6,6 @@ package com.flipkart.bean;
  */
 public class Admin extends User {
 
-    /**
-     * Constructs a new Admin user with default values.
-     */
     public Admin() {
 
     }

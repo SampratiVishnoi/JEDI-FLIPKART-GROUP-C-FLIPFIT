@@ -6,6 +6,7 @@ public class Payment {
 
     private String paymentId;
 
+    private String bookingId;
 
     private String amountPaid;
 
@@ -33,8 +34,6 @@ public class Payment {
         this.bookingId = bookingId;
     }
 
-
-    private String bookingId;
 
 
 

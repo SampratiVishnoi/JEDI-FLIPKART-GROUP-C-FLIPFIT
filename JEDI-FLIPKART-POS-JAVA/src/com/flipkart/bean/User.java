@@ -1,7 +1,6 @@
 package com.flipkart.bean;
 
 
-
 public class User {
 
 
@@ -15,6 +14,7 @@ public class User {
 
 
     private String password;
+    private Role role;
 
     public String getUserID() {
         return userID;
@@ -55,10 +55,6 @@ public class User {
     public void setRole(Role role) {
         this.role = role;
     }
-
-
-    private Role role;
-
 
 
 }

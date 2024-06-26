@@ -9,18 +9,11 @@ public class GymCentre {
     private String ownerID;
     private String gymCenterName;
 
-    protected String gstin;
     private String city;
     private int capacity;
     private int price;
 
-    public String getGstin() {
-        return gstin;
-    }
 
-    public void setGstin(String gstin) {
-        this.gstin = gstin;
-    }
 
 
     public String getGymCentreID() {

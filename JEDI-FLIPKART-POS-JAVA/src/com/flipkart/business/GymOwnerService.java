@@ -2,7 +2,7 @@ package com.flipkart.business;
 
 
 
-public class GymOwnerService {
+public class GymOwnerService implements GymOwnerServiceInterface {
 
     public void requestGymOwnerApproval(String gymOwnerId) {
         System.out.println("Owner request added with id: " + gymOwnerId);
@@ -18,7 +18,7 @@ public class GymOwnerService {
         return true;
     }
 
-    public void registerGymOwner(String userId,String userName, String password, String email, String panNumber,String cardNumber) {
+    public void registerGymOwner(String userId,String userName, String password, String email, String panNumber,String cardNumber, String gstNo) {
         System.out.println("Registratio done successfully");
     }
 }

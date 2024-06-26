@@ -1,8 +1,5 @@
 package com.flipkart.client;
 
-import com.flipkart.bean.GymCentre;
-import com.flipkart.bean.Slot;
-
 public class GymOwnerClient {
 
     public boolean gymOwnerLogin(String userName, String password) {

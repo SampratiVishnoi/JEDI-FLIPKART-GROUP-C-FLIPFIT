@@ -1,17 +1,12 @@
 package com.flipkart.business;
 
-import com.flipkart.bean.Booking;
-import com.flipkart.bean.Slot;
-
-public class BookingService  {
+public class BookingService implements BookingServiceInterface{
 
     public boolean checkBookingOverlap(String customerId, String slotId){
-        //return whether the customer has already booked a slot at same timing
         System.out.println("checkBookingOverlap");
         return true;
     }
     public void addBooking(String userName, String slotId) {
-        // if slot available
         System.out.println("Booking Added");
 
     }
@@ -25,5 +20,29 @@ public class BookingService  {
     public void cancelBooking(String bookingID) {
         System.out.println("Cancel booking with ID " + bookingID);
 
+    }
+    public void getAllSlotsByCentre(String centreID) {
+        System.out.println("Print all Flipfit gym slot list in centre " + centreID);
+    }
+
+    public void getSlotByID(String slotID){
+
+        System.out.println("Gives the given slot by ID " + slotID);
+    }
+
+
+    public void getSlotList(){
+
+        System.out.println("Print all Flipfit gym slot list");
+    }
+
+    public void addSlotsForGym(String gymCentreId){
+
+        System.out.println("Adding all slots to gym: " + gymCentreId);
+    }
+
+    public boolean isSlotValid(String slotID,String centreId){
+
+        return true;
     }
 }

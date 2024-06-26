@@ -8,11 +8,13 @@ public class GymOwner extends User {
 
     private String panNumber;
 
+    private String gstNo;
 
     private List<String> gymCentreIDs;
 
 
     private String cardDetails;
+    private int isApproved;
 
     public String getPanNumber() {
         return panNumber;
@@ -33,6 +35,13 @@ public class GymOwner extends User {
     public String getCardDetails() {
         return cardDetails;
     }
+    public String getGstNo() {
+        return gstNo;
+    }
+
+    public void setGstNo(String gstNo) {
+        this.gstNo = gstNo;
+    }
 
     public void setCardDetails(String cardDetails) {
         this.cardDetails = cardDetails;
@@ -47,7 +56,6 @@ public class GymOwner extends User {
     }
 
 
-    private int isApproved;
 
 
 }

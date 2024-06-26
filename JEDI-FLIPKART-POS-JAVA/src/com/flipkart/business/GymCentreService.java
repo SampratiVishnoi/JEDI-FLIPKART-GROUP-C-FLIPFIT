@@ -1,9 +1,10 @@
 package com.flipkart.business;
 
 import com.flipkart.bean.GymCentre;
-import com.flipkart.bean.Slot;
 
-public class GymCentreService {
+import java.util.Date;
+
+public class GymCentreService implements GymCentreServiceInterface {
 
 
     public void getAllCentresByOwnerId(String gymOwnerId) {
@@ -14,7 +15,8 @@ public class GymCentreService {
         System.out.println("Print all Flipfit gym centre in city " + city);
     }
 
-    public void getAvailableSlotsByCentreAndDate(String centreID){
+
+    public void getAvailableSlotsByCentreAndDate(String centreID, java.sql.Date date) {
         System.out.println("Print all Flipfit gym slots in centre " + centreID);
     }
 
