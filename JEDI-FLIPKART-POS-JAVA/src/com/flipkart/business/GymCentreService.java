@@ -1,29 +1,42 @@
 package com.flipkart.business;
 
+import com.flipkart.bean.Booking;
 import com.flipkart.bean.GymCentre;
+import com.flipkart.dao.GymCentreServiceDAOImpl;
+import com.flipkart.dao.GymCentreServiceDAOInterface;
 
-import java.util.Date;
+import java.sql.Date;
+import java.util.List;
 
-public class GymCentreService implements GymCentreServiceInterface {
+public class GymCentreService implements GymCentreServiceInterface{
 
+    private static GymCentreServiceDAOInterface gymCentreDAO = new GymCentreServiceDAOImpl();
+    //private static ScheduleServiceInterface scheduleService = new ScheduleService();
 
-    public void getAllCentresByOwnerId(String gymOwnerId) {
-        System.out.println("Print all Flipfit gym centre of owner id " + gymOwnerId);
+    public List<GymCentre> getAllCentresByOwnerId(String gymOwnerId) {
+        return gymCentreDAO.getAllCentresByOwnerId(gymOwnerId);
     }
 
-    public void getCentresByCity(String city){
-        System.out.println("Print all Flipfit gym centre in city " + city);
+    public List<GymCentre> getCentresByCity(String city){
+        return gymCentreDAO.getCentresByCity(city);
     }
 
-
-    public void getAvailableSlotsByCentreAndDate(String centreID, java.sql.Date date) {
-        System.out.println("Print all Flipfit gym slots in centre " + centreID);
-    }
+//    public List<Booking> getAvailableSlotsByCentreAndDate(String centreID, Date date){
+//        //return scheduleService.getAllAvailableSlotsByDate(centreID, date);
+//    }
 
     public void addCenter(GymCentre gymCentre) {
         //takes gymCenter details
-        System.out.println("Flipfit gym centre added");
+        gymCentreDAO.addCenter(gymCentre);
 
     }
 
+//    public void requestGymCentreApproval(String gymCentreId){
+//        gymCentreDAO.requestGymCentreApproval(gymCentreId);
+//    }
+
+//    public GymCentre getGymCentreById(String centreID) {
+//        GymCentre gymCentre = gymCentreDAO.getGymCentreById(centreID);
+//        return gymCentre;
+//    }
 }

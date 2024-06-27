@@ -1,29 +1,64 @@
 package com.flipkart.business;
 
-public class BookingService implements BookingServiceInterface{
+import com.flipkart.DAO.BookingDAO;
+import com.flipkart.bean.Booking;
 
-    public boolean checkBookingOverlap(String customerId, String slotId){
-        System.out.println("checkBookingOverlap");
-        return true;
+import com.flipkart.dao.BookingServiceDAOImpl;
+import com.flipkart.exceptions.BookingFailedException;
+import com.flipkart.utils.UserPlan;
+
+import java.util.Date;
+import java.util.List;
+
+
+public class BookingService implements BookingServiceInterface {
+
+    private final BookingServiceDAOImpl bookingDAO = new BookingServiceDAOImpl();
+    //private final ScheduleService scheduleService  = new ScheduleService();
+
+   private final BookingService slotService = new BookingService();
+
+    public boolean checkBookingOverlap(String customerId, Date date, String slotId){
+        //return whether the customer has already booked a slot at same timing
+        Booking slot = slotService.getSlotByID();
+        return bookingDAO.checkBookingOverlap(customerId,date,slot.getTime());
     }
-    public void addBooking(String userName, String slotId) {
-        System.out.println("Booking Added");
+    public void addBooking(String userName, String scheduleID) {
+        try {
+            boolean isAvailable = scheduleService.modifySchedule(scheduleID,-1);
+            if(!isAvailable){
+                System.out.println("No seats available for the booking");
+                return;
+            }
+            bookingDAO.addBooking(userName, scheduleID);
+        } catch (BookingFailedException e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 
-    public void getBookingByCustomerId(String customerId){
-        System.out.println("Get Booking By Customer Id");
+    public List<Booking> getBookingByCustomerId(String customerId){
+        try {
+            return bookingDAO.getBookingByCustomerId(customerId);
+        } catch (BookingFailedException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
 
     }
 
+    public List<UserPlan> getCustomerPlan(String customerId){
+        return bookingDAO.getCustomerPlan(customerId);
+    }
 
     public void cancelBooking(String bookingID) {
-        System.out.println("Cancel booking with ID " + bookingID);
-
-    }
-    public void getAllSlotsByCentre(String centreID) {
-        System.out.println("Print all Flipfit gym slot list in centre " + centreID);
-    }
+        try {
+            Booking booking  = bookingDAO.getBookingByBookingId(bookingID);
+            bookingDAO.cancelBookingById(bookingID);
+            scheduleService.modifySchedule(booking.getScheduleID(),1);
+        } catch (BookingFailedException e) {
+            System.out.println(e.getMessage());
+        }
 
     public void getSlotByID(String slotID){
 

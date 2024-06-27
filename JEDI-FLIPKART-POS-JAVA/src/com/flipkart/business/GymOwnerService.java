@@ -1,24 +1,28 @@
 package com.flipkart.business;
 
 
+import com.flipkart.bean.GymOwner;
+import com.flipkart.dao.GymOwnerServiceDAOImpl;
+
+import java.util.List;
 
 public class GymOwnerService implements GymOwnerServiceInterface {
-
+    private static GymOwnerServiceDAOImpl gymOwnerDAO = new GymOwnerServiceDAOImpl();
     public void requestGymOwnerApproval(String gymOwnerId) {
-        System.out.println("Owner request added with id: " + gymOwnerId);
+        gymOwnerDAO.requestGymOwnerApproval(gymOwnerId);
 
     }
 
-    public void viewAllGymOwners() {
-        System.out.println("Print all Flipfit gym owners list");
-
+    public List<GymOwner> viewAllGymOwners() {
+        return gymOwnerDAO.viewAllGymOwners();
     }
+
 
     public boolean loginGymOwner(String username,String password){
-        return true;
+        return gymOwnerDAO.loginGymOwner(username,password);
     }
 
-    public void registerGymOwner(String userId,String userName, String password, String email, String panNumber,String cardNumber, String gstNo) {
-        System.out.println("Registratio done successfully");
+    public void registerGymOwner(String userName, String password, String email, String panNumber,String cardNumber,String gstNo) {
+        gymOwnerDAO.registerGymOwner(new GymOwner(userName,email,password,panNumber,cardNumber,gstNo));
     }
 }

@@ -1,5 +1,6 @@
 package com.flipkart.business;
 
+import com.flipkart.bean.Booking;
 import com.flipkart.bean.GymCentre;
 
 import java.sql.Date;
@@ -14,12 +15,12 @@ import java.util.List;
 public interface GymCentreServiceInterface {
 
 
-    void getAllCentresByOwnerId(String gymOwnerId);
+    List<GymCentre> getAllCentresByOwnerId(String gymOwnerId);
 
 
-    void getCentresByCity(String city);
+    List<GymCentre> getCentresByCity(String city);
 
-    void getAvailableSlotsByCentreAndDate(String centreID, Date date);
+    List<Booking> getAvailableSlotsByCentreAndDate(String centreID, Date date);
 
 
     void addCenter(GymCentre gymCentre);

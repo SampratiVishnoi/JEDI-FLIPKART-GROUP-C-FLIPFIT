@@ -1,10 +1,10 @@
-package com.flipkart.business;
+package com.flipkart.dao;
 
 import com.flipkart.bean.GymOwner;
 
 import java.util.List;
 
-public interface GymOwnerServiceInterface {
+public interface GymOwnerServiceDAOInterface {
     void requestGymOwnerApproval(String gymOwnerId) ;
     List<GymOwner> viewAllGymOwners();
     boolean loginGymOwner(String username,String password);

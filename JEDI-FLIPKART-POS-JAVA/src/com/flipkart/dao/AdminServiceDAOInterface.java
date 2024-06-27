@@ -1,14 +1,11 @@
-package com.flipkart.business;
+package com.flipkart.dao;
 
 import com.flipkart.bean.GymCentre;
 import com.flipkart.bean.GymOwner;
 
 import java.util.List;
 
-
-public interface AdminServiceInterface {
-
-
+public interface AdminServiceDAOInterface {
     void approveGymCenter(String gymCentreId, int isApproved);
 
 
