@@ -26,7 +26,7 @@ public class GymOwnerService implements GymOwnerServiceInterface {
         return gymOwnerDAO.loginGymOwner(username,password);
     }
 
-    public void registerGymOwner(String userName, String email,String password , String panNumber,String cardNumber) {
-        gymOwnerDAO.registerGymOwner(new GymOwner(userName,email,password,panNumber,cardNumber));
+    public void registerGymOwner(String userId,String userName, String email,String password , String panNumber,String cardNumber) {
+        gymOwnerDAO.registerGymOwner(new GymOwner(userId,userName,email,password,panNumber,cardNumber));
     }
 }

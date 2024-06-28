@@ -52,10 +52,10 @@ public class GymOwnerClient {
         System.out.println("Enter your PAN Number");
         String panNumber = scanner.next();
 
-        System.out.println("Enter your Card Number");
+        System.out.println("Enter your gst Number");
         String cardNumber = scanner.next();
 
-        gymOwnerService.registerGymOwner(userName,password,email,panNumber,cardNumber);
+        gymOwnerService.registerGymOwner(userName,userName,email,password,panNumber,cardNumber);
         gymOwnerClientMainPage(userName);
     }
 

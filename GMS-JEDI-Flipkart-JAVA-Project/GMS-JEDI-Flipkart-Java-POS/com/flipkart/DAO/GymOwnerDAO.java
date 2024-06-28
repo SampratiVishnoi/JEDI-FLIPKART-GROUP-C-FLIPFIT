@@ -39,6 +39,7 @@ public class GymOwnerDAO implements GymOwnerInterfaceDAO{
             ResultSet rs = statement.executeQuery();
             while(rs.next()) {
                 GymOwner owner = new GymOwner(
+                        rs.getString("id"),
                         rs.getString("name"),
                         rs.getString("email"),
                         rs.getString("password"),
@@ -110,7 +111,7 @@ public class GymOwnerDAO implements GymOwnerInterfaceDAO{
             conn  = DBConnection.connect();
             statement = conn.prepareStatement(SQLConstants.REGISTER_GYM_OWNER);
 
-
+            statement.setString(1,gymOwner.getUserID());
             statement.setString(2,gymOwner.getUserName());
             statement.setString(3,gymOwner.getEmail());
             statement.setString(4,gymOwner.getPassword());
@@ -142,7 +143,7 @@ public class GymOwnerDAO implements GymOwnerInterfaceDAO{
             statement = conn.prepareStatement(SQLConstants.FETCH_ALL_PENDING_GYM_OWNERS_QUERY);
             ResultSet rs = statement.executeQuery();
             while(rs.next()) {
-                GymOwner owner = new GymOwner(rs.getString("name"), rs.getString("email"), rs.getString("password"), rs.getString("panNumber"), rs.getString("cardDetails"));
+                GymOwner owner = new GymOwner(rs.getString("id"),rs.getString("name"), rs.getString("email"), rs.getString("password"), rs.getString("panNumber"), rs.getString("cardDetails"));
                 owner.setApproved(rs.getInt("isApproved"));
                 pendingList.add(owner);
             }

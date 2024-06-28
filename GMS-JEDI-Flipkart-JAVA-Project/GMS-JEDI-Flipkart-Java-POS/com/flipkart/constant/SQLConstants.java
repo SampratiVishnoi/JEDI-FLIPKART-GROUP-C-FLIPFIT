@@ -13,7 +13,7 @@ public class SQLConstants {
 
 
     //  ------------ GYM OWNER ------------
-    public static final String REGISTER_GYM_OWNER = "Insert into FlipFit.GymOwner VALUES (?,?,?,?,?,?)";
+    public static final String REGISTER_GYM_OWNER = "Insert into FlipFit.GymOwner VALUES (?,?,?,?,?,?,?)";
     public static final String LOGIN_GYM_OWNER = "Select * from GymOwner where name=? and password=?";
     public static final String SQL_APPROVE_GYM_OWNER_BY_ID_QUERY="Update GymOwner Set isApproved=? WHERE Id=?";
 //    public static final String SQL_APPROVE_GYM_OWNER_BY_ID_QUERY ="Update GymOwner Set isApproved=? WHERE Id=?";

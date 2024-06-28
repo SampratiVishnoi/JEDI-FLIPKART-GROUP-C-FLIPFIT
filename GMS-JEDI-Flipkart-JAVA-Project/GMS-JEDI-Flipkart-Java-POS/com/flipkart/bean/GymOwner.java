@@ -36,8 +36,8 @@ public class GymOwner extends User {
      * @param panNumber    The PAN (Permanent Account Number) of the gym owner.
      * @param cardDetails  The card details of the gym owner.
      */
-    public GymOwner(String userName, String email, String password, String panNumber, String cardDetails) {
-        super(userName, email, password, Role.GYMOWNER);
+    public GymOwner(String id, String userName, String email, String password, String panNumber, String cardDetails) {
+        super(id, userName, email, password, Role.GYMOWNER);
         this.panNumber = panNumber;
         this.cardDetails = cardDetails;
         this.isApproved = 0;
@@ -46,14 +46,14 @@ public class GymOwner extends User {
     /**
      * Constructs a new gym owner with the given details.
      *
-
+     * @param userId       The unique identifier for the gym owner.
      * @param userName     The user name of the gym owner.
      * @param email        The email address of the gym owner.
      * @param password     The password of the gym owner.
      * @param approved     The approval status of the gym owner.
      */
-    public GymOwner(String userName, String email, String password, int approved) {
-        super(userName, email, password, Role.GYMOWNER);
+    public GymOwner(String userId, String userName, String email, String password, int approved) {
+        super(userId, userName, email, password, Role.GYMOWNER);
         this.isApproved = approved;
     }
 

@@ -37,12 +37,12 @@ public interface GymOwnerServiceInterface {
     /**
      * Registers a new gym owner with the provided details.
      *
-
+     * @param userId     The ID of the gym owner
      * @param userName   The username chosen by the gym owner
      * @param password   The password chosen by the gym owner
      * @param email      The email address of the gym owner
      * @param panNumber  The PAN number of the gym owner
      * @param cardNumber The card number associated with the gym owner
      */
-    void registerGymOwner(String userName, String password, String email, String panNumber, String cardNumber);
+    void registerGymOwner(String userId, String userName, String email,String password, String panNumber, String cardNumber);
 }
