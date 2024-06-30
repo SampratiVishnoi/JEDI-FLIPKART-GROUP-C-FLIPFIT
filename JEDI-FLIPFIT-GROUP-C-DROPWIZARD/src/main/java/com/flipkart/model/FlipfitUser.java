@@ -1,0 +1,71 @@
+package com.flipkart.model;
+
+public class FlipfitUser {
+
+    private String userID;
+    private String userName;
+    private String email;
+    private String password;
+    private FlipfitRole role;
+
+    public FlipfitUser() {
+    }
+
+    public FlipfitUser(String id, String userName, String email, String password, FlipfitRole role) {
+        this.userID = id;
+        this.userName = userName;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+    }
+
+    public FlipfitRole getRole() {
+        return role;
+    }
+
+    public void setRole(FlipfitRole role) {
+        this.role = role;
+    }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "userID='" + userID + '\'' +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", role=" + role;
+    }
+}
