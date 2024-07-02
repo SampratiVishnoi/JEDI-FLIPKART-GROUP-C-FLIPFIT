@@ -15,11 +15,15 @@ To design and implement FlipFit Application (Gym Management System) where users 
 FlipFit is designed to address the common challenges faced by gym facilities, including managing schedules, handling memberships, and maintaining efficient communication between users and staff. The system offers a user-friendly interface and robust features that facilitate the smooth operation of gym centers.
 
 ## Tech Stack
-- Backend: Dropwizard, Java
-- Database: MySQL
-- Version Control: Git, GitHub
-- API Testing: Postman
-- IDEs: IntelliJ IDEA, Spring Tool Suite (STS)
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Dropwizard](https://img.shields.io/badge/Dropwizard-4A90E2?style=for-the-badge&logo=dropwizard&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![Spring Tool Suite](https://img.shields.io/badge/Spring_Tool_Suite-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+
 
 ## Development Approach
 FlipFit is built using modern development practices to ensure scalability, maintainability, and ease of use. The project follows a modular approach, with clearly defined roles and responsibilities for each component.
