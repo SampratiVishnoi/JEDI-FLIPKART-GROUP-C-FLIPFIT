@@ -1,12 +1,12 @@
 # FlipFit Gym Management System
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/FirdausJawed/engage-project?style=for-the-badge&logo=git)](https://github.com/FirdausJawed/) 
-[![GitHub stars](https://img.shields.io/github/stars/FirdausJawed/engage-project?style=for-the-badge)](https://github.com/FirdausJawed/Spam-Classifier/stargazers) 
-[![GitHub forks](https://img.shields.io/github/forks/FirdausJawed/engage-project?style=for-the-badge&logo=git)](https://github.com/FirdausJawed/Spam-Classifier/network)
-[![GitHub issues](https://img.shields.io/github/issues/FirdausJawed/engage-project?style=for-the-badge)](https://github.com/FirdausJawed/Spam-Classifier/issues)
-[![GitHub stars](https://img.shields.io/github/stars/FirdausJawed/engage-project?style=for-the-badge)](https://github.com/FirdausJawed/Spam-Classifier/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/FirdausJawed/engage-project?color=%230000ff&style=for-the-badge)](https://github.com/FirdausJawed/Spam-Classifier/network)
-[![GitHub license](https://img.shields.io/github/license/FirdausJawed/engage-project?style=for-the-badge)](https://github.com/FirdausJawed/Spam-Classifier)
+[![GitHub last commit](https://img.shields.io/github/last-commit/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge&logo=git)](https://github.com/FirdausJawed/) 
+[![GitHub stars](https://img.shields.io/github/stars/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/stargazers) 
+[![GitHub forks](https://img.shields.io/github/forks/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge&logo=git)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/network)
+[![GitHub issues](https://img.shields.io/github/issues/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/issues)
+[![GitHub stars](https://img.shields.io/github/stars/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?color=%230000ff&style=for-the-badge)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/network)
+[![GitHub license](https://img.shields.io/github/license/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT)
 
 ## Vision
 To design and implement FlipFit Application (Gym Management System) where users can view gym centers and available slots, book and cancel slots. Gym owners can register their gyms, add slots, view bookings, etc. Admins can approve registration requests for gym owners, gym centers, and users.
@@ -15,11 +15,11 @@ To design and implement FlipFit Application (Gym Management System) where users 
 FlipFit is designed to address the common challenges faced by gym facilities, including managing schedules, handling memberships, and maintaining efficient communication between users and staff. The system offers a user-friendly interface and robust features that facilitate the smooth operation of gym centers.
 
 ## Tech Stack
-Backend: Dropwizard, Java
-Database: MySQL
-Version Control: Git, GitHub
-API Testing: Postman
-IDEs: IntelliJ IDEA, Spring Tool Suite (STS)
+- Backend: Dropwizard, Java
+- Database: MySQL
+- Version Control: Git, GitHub
+- API Testing: Postman
+- IDEs: IntelliJ IDEA, Spring Tool Suite (STS)
 
 ## Development Approach
 FlipFit is built using modern development practices to ensure scalability, maintainability, and ease of use. The project follows a modular approach, with clearly defined roles and responsibilities for each component.
