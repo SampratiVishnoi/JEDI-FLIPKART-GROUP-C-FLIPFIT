@@ -94,4 +94,4 @@ $ git push origin master
 - Create a pull request.
 
 ## License
-Spam Classifier is released under the MIT License
+Spam Classifier is released under the [MIT License](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/blob/main/LICENSE)
