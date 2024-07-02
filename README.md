@@ -27,42 +27,6 @@ FlipFit is built using modern development practices to ensure scalability, maint
 ## Community and Contribution
 FlipFit is an open-source project, and we welcome contributions from the community. Whether you are a developer, designer, or user, your feedback and contributions are invaluable to us. Join us in enhancing the FlipFit Gym Management System and making it the best solution for gym management needs.
 
-## Project Structure
-
-FlipFit/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/flipfit/
-│   │   │       ├── app/
-│   │   │       │   ├── FlipFitApplication.java
-│   │   │       ├── restController/
-│   │   │       │   ├── AdminController.java
-│   │   │       │   ├── CustomerController.java
-│   │   │       │   ├── OwnerController.java
-│   │   │       ├── model/
-│   │   │       │   ├── User.java
-│   │   │       │   ├── Admin.java
-│   │   │       │   ├── GymOwner.java
-│   │   │       │   ├── GymCenter.java
-│   │   │       │   ├── Slot.java
-│   │   │       ├── service/
-│   │   │       │   ├── UserService.java
-│   │   │       │   ├── AdminService.java
-│   │   │       │   ├── OwnerService.java
-│   │   │       ├── dao/
-│   │   │       │   ├── UserDAO.java
-│   │   │       │   ├── AdminDAO.java
-│   │   │       │   ├── OwnerDAO.java
-│   │   │       ├── utils/
-│   │   │       ├── exceptions/
-│   │   │       ├── validators/
-│   ├── test/
-│   ├── resources/
-│   │   ├── application.yml
-├── pom.xml
-└── README.md
-
 ## Features
 ### User
 - View gym centers and available slots
