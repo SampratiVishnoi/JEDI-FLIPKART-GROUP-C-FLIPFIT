@@ -92,3 +92,6 @@ $ git push origin master
 - Make your changes.
 - Commit and push your changes.
 - Create a pull request.
+
+## License
+Spam Classifier is released under the MIT License
