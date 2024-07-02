@@ -1,6 +1,6 @@
 # FlipFit Gym Management System
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge&logo=git)](https://github.com/FirdausJawed/) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge&logo=git)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT) 
 [![GitHub stars](https://img.shields.io/github/stars/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/stargazers) 
 [![GitHub forks](https://img.shields.io/github/forks/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge&logo=git)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/network)
 [![GitHub issues](https://img.shields.io/github/issues/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT?style=for-the-badge)](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/issues)
@@ -24,9 +24,6 @@ FlipFit is designed to address the common challenges faced by gym facilities, in
 ## Development Approach
 FlipFit is built using modern development practices to ensure scalability, maintainability, and ease of use. The project follows a modular approach, with clearly defined roles and responsibilities for each component.
 
-## Community and Contribution
-FlipFit is an open-source project, and we welcome contributions from the community. Whether you are a developer, designer, or user, your feedback and contributions are invaluable to us. Join us in enhancing the FlipFit Gym Management System and making it the best solution for gym management needs.
-
 ## Features
 ### User
 - View gym centers and available slots
@@ -35,8 +32,9 @@ FlipFit is an open-source project, and we welcome contributions from the communi
 - Register a gym
 - Add slots for a gym
 - View bookings
+  
 ### Admin
-- Approve registration requests for gym owners, gym centers, and users
+- Approve registration requests for gym owners, gym centers. 
 
 ## Getting Started
 - Prerequisites
@@ -49,7 +47,7 @@ FlipFit is an open-source project, and we welcome contributions from the communi
 ### How to commit in CLI
 
 ```sh
-$ git clone https://github.com/FirdausJawed/engage-project.git
+$ git clone https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT.git
 $ git checkout -b Branch_Name
 $ git add .
 $ git commit -m 'message'
@@ -94,4 +92,4 @@ $ git push origin master
 - Create a pull request.
 
 ## License
-Spam Classifier is released under the [MIT License](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/blob/main/LICENSE)
+JEDI-FLIPKART-GROUP-C-FLIPFIT is released under the [MIT License](https://github.com/SampratiVishnoi/JEDI-FLIPKART-GROUP-C-FLIPFIT/blob/main/LICENSE)
